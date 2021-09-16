@@ -14,5 +14,5 @@ ims_db_gh = mysql.connector.connect(
     database="ims_db_gh"
 )
 
-procurement_cursor = procurement_db.cursor()
-ims_cursor = ims_db_gh.cursor()
+procurement_cursor = procurement_db.cursor(buffered=True)
+ims_cursor = ims_db_gh.cursor(buffered=True)
