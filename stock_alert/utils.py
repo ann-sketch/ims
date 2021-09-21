@@ -1,0 +1,1 @@
+def out(*args, in_production = False,**kwargs): None if in_production else print(*args, **kwargs)

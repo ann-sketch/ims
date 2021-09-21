@@ -49,7 +49,7 @@
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Image</th>
+                <th></th>
                 
                 <th>Product Name</th>
                 <th>Price</th>
