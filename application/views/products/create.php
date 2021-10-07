@@ -11,12 +11,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Add New Products
+      Add New Stocks
       
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li class="active">Stocks</li>
     </ol>
   </section>
 
@@ -51,8 +51,8 @@
 
                 <div class="form-group">
 
-                  <label for="product_image">Image</label>
-                  <div class="kv-avatar">
+                  <label for="product_image" style="display: none;">Image</label>
+                  <div class="kv-avatar" style="display: none;">
                       <div class="file-loading">
                           <input id="product_image" name="product_image" type="file">
                       </div>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="product_name">Product name</label>
+                  <label for="product_name">Stock name</label>
                   <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" autocomplete="off"/>
                 </div>
 
@@ -79,7 +79,7 @@
                   <input type="text" class="form-control" id="qty" name="qty" placeholder="Enter Qty" autocomplete="off" />
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="display: none;">
                   <label for="description">Description</label>
                   <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
                   description" autocomplete="off">
@@ -88,7 +88,7 @@
 
                 <?php if($attributes): ?>
                   <?php foreach ($attributes as $k => $v): ?>
-                    <div class="form-group">
+                    <div class="form-group" style="display: none;">
                       <label for="groups"><?php echo $v['attribute_data']['name'] ?></label>
                       <select class="form-control select_group" id="attributes_value_id" name="attributes_value_id[]" multiple="multiple">
                         <?php foreach ($v['attribute_value'] as $k2 => $v2): ?>
@@ -99,7 +99,7 @@
                   <?php endforeach ?>
                 <?php endif; ?>
 
-                <div class="form-group">
+                <div class="form-group" style="display: none;">
                   <label for="brands">Items</label>
                   <select class="form-control select_group" id="brands" name="brands[]" multiple="multiple">
                     <?php foreach ($brands as $k => $v): ?>
@@ -108,7 +108,7 @@
                   </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="display: none;">
                   <label for="category">Category</label>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
@@ -117,7 +117,7 @@
                   </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="display: none;">
                   <label for="store">Warehouse</label>
                   <select class="form-control select_group" id="store" name="store">
                     <?php foreach ($stores as $k => $v): ?>

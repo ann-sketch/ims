@@ -56,23 +56,23 @@
                 <div class="col-md-7 col-xs-12 pull pull-left">
 
                   <div class="form-group">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Name</label>
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Name</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter Client Name" autocomplete="off" />
+                      <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter Requester's Name" autocomplete="off" />
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group" style="display: none;">
                     <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Address</label>
                     <div class="col-sm-7">
                       <textarea type="text" class="form-control" id="customer_address" name="customer_address" placeholder="Enter Client Address" autocomplete="off"></textarea>
                     </div>
                   </div>
 
-                  <div class="form-group">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Phone</label>
+                  <div class="form-group" >
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Phone</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control" id="customer_phone" name="customer_phone" placeholder="Enter Client Phone" autocomplete="off">
+                      <input type="text" class="form-control" id="customer_phone" name="customer_phone" placeholder="Enter Requester's Phone" autocomplete="off">
                     </div>
                   </div>
                 </div>
@@ -84,8 +84,8 @@
                     <tr>
                       <th style="width:50%">Product</th>
                       <th style="width:10%">Qty</th>
-                      <th style="width:10%">Rate</th>
-                      <th style="width:20%">Amount</th>
+                      <!-- <th style="width:10%">Rate</th> -->
+                      <!-- <th style="width:20%">Amount</th> -->
                       <th style="width:10%"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th>
                     </tr>
                   </thead>
@@ -101,11 +101,11 @@
                           </select>
                         </td>
                         <td><input type="text" name="qty[]" id="qty_1" class="form-control" required onkeyup="getTotal(1)"></td>
-                        <td>
+                        <td style="display: none;">
                           <input type="text" name="rate[]" id="rate_1" class="form-control" disabled autocomplete="off">
                           <input type="hidden" name="rate_value[]" id="rate_value_1" class="form-control" autocomplete="off">
                         </td>
-                        <td>
+                        <td style="display: none;">
                           <input type="text" name="amount[]" id="amount_1" class="form-control" disabled autocomplete="off">
                           <input type="hidden" name="amount_value[]" id="amount_value_1" class="form-control" autocomplete="off">
                         </td>
@@ -116,7 +116,7 @@
 
                 <br /> <br/>
 
-                <div class="col-md-6 col-xs-12 pull pull-left">
+                <div class="col-md-6 col-xs-12 pull pull-left" style="display: none;">
 
                   <div class="form-group">
                     <label for="gross_amount" class="col-sm-5 control-label">Gross Amount</label>

@@ -338,7 +338,7 @@ class Controller_Orders extends Admin_Controller
 
 			    <div class="row">
 			      
-			      <div class="col-xs-6 pull pull-right">
+			      <div class="col-xs-6 pull pull-right" style="display: none;">
 
 			        <div class="table-responsive">
 			          <table class="table">

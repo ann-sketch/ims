@@ -84,7 +84,7 @@
                       <th style="width:50%">Product</th>
                       <th style="width:10%">Qty</th>
                       <th style="width:10%">Rate</th>
-                      <th style="width:20%">Amount</th>
+                      <th style="width:20%">Amdount</th>
                       <th style="width:10%"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th>
                     </tr>
                   </thead>
@@ -123,7 +123,7 @@
 
                 <br /> <br/>
 
-                <div class="col-md-6 col-xs-12 pull pull-left">
+                <div class="col-md-6 col-xs-12 pull pull-left" style="display: none;">
 
                   <div class="form-group">
                     <label for="gross_amount" class="col-sm-5 control-label">Gross Amount</label>

@@ -50,7 +50,7 @@ if ($IS_PRODUCTION) {
         'save_queries' => TRUE
     );
 } else {
-    $_SERVER['CONFIG_BASE_URL'] = "https://ablgh.com/CIPurchasing/app/";
+    $_SERVER['CONFIG_BASE_URL'] = "https://ablgh.com/CIPurchasing/ims/";
     $_SERVER['CONFIG_IMS_DB'] = array(
         'dsn'    => '',
         'hostname' => 'localhost',
