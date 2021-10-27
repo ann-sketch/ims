@@ -8,12 +8,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage Products
+      Manage Stocks
 
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li class="active">Stocks</li>
     </ol>
   </section>
 
@@ -38,7 +38,7 @@
         <?php endif; ?>
 
         <?php if(in_array('createProduct', $user_permission)): ?>
-          <a href="<?php echo base_url('Controller_Products/create') ?>" class="btn btn-primary">Add Product</a>
+          <a href="<?php echo base_url('Controller_Products/create') ?>" class="btn btn-primary">Add Stock</a>
           <br /> <br />
         <?php endif; ?>
 
@@ -51,10 +51,10 @@
               <tr>
                 <th></th>
                 
-                <th>Product Name</th>
+                <th>Stock Name</th>
                 <th>Price</th>
                 <th>Qty</th>
-                <!-- <th>Warehouse</th> -->
+                <th>Warehouse</th>
                 <th>Availability</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
                   <th>Action</th>
@@ -85,7 +85,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Product</h4>
+        <h4 class="modal-title">Remove Stock</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('Controller_Products/remove') ?>" method="post" id="removeForm">

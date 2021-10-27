@@ -85,7 +85,7 @@
                       <th style="width:10%">Qty</th>
                       <th style="width:10%">Rate</th>
                       <th style="width:20%">Amdount</th>
-                      <th style="width:10%"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th>
+                      <th style="width:10%;display: none !important;"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th>
                     </tr>
                   </thead>
 
