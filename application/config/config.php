@@ -24,7 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 
-$IS_PRODUCTION = true;
+$IS_PRODUCTION = false;
 
 if ($IS_PRODUCTION) {
     $_SERVER['CONFIG_BASE_URL'] = "http://208.113.165.170/ims/";
