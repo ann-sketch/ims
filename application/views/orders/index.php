@@ -49,9 +49,9 @@
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Bill no</th>
-                <th>Client Name</th>
-                <th>Client Phone</th>
+                <th>Order no</th>
+                <th>Requester's Name</th>
+                <th>Requester's Phone</th>
                 <th>Date Time</th>
                 <th>Total Products</th>
                 <th>Total Amount</th>

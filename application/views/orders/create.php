@@ -63,9 +63,9 @@
                   </div>
 
                   <div class="form-group" style="display: none;">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Address</label>
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Address</label>
                     <div class="col-sm-7">
-                      <textarea type="text" class="form-control" id="customer_address" name="customer_address" placeholder="Enter Client Address" autocomplete="off"></textarea>
+                      <textarea type="text" class="form-control" id="customer_address" name="customer_address" placeholder="Enter Requester's Address" autocomplete="off"></textarea>
                     </div>
                   </div>
 

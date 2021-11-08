@@ -55,23 +55,23 @@
                 <div class="col-md-7 col-xs-12 pull pull-left">
 
                   <div class="form-group">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Name</label>
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Name</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter Client Name" value="<?php echo $order_data['order']['customer_name'] ?>" autocomplete="off"/>
+                      <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter Requester's Name" value="<?php echo $order_data['order']['customer_name'] ?>" autocomplete="off"/>
+                    </div>
+                  </div>
+
+                  <div class="form-group" style="display: none;">
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Address</label>
+                    <div class="col-sm-7">
+                      <textarea type="text" class="form-control" id="customer_address" name="customer_address" placeholder="Enter Requester's Address" value="<?php echo $order_data['order']['customer_address'] ?>" autocomplete="off"></textarea> 
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Address</label>
+                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Requester's Phone</label>
                     <div class="col-sm-7">
-                      <textarea type="text" class="form-control" id="customer_address" name="customer_address" placeholder="Enter Client Address" value="<?php echo $order_data['order']['customer_address'] ?>" autocomplete="off"></textarea> 
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="gross_amount" class="col-sm-5 control-label" style="text-align:left;">Client Phone</label>
-                    <div class="col-sm-7">
-                      <input type="text" class="form-control" id="customer_phone" name="customer_phone" placeholder="Enter Client Phone" value="<?php echo $order_data['order']['customer_phone'] ?>" autocomplete="off">
+                      <input type="text" class="form-control" id="customer_phone" name="customer_phone" placeholder="Enter Requester's Phone" value="<?php echo $order_data['order']['customer_phone'] ?>" autocomplete="off">
                     </div>
                   </div>
                 </div>
@@ -83,9 +83,9 @@
                     <tr>
                       <th style="width:50%">Product</th>
                       <th style="width:10%">Qty</th>
-                      <th style="width:10%">Rate</th>
-                      <th style="width:20%">Amdount</th>
-                      <th style="width:10%;display: none !important;"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th>
+                      <!-- <th style="width:10%">Rate</th> -->
+                      <!-- <th style="width:20%">Amdount</th>
+                      <th style="width:10%;display: none !important;"><button type="button" id="add_row" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></button></th> -->
                     </tr>
                   </thead>
 
@@ -105,15 +105,15 @@
                             </select>
                           </td>
                           <td><input type="text" name="qty[]" id="qty_<?php echo $x; ?>" class="form-control" required onkeyup="getTotal(<?php echo $x; ?>)" value="<?php echo $val['qty'] ?>" autocomplete="off"></td>
-                          <td>
+                          <td style="display: none;">
                             <input type="text" name="rate[]" id="rate_<?php echo $x; ?>" class="form-control" disabled value="<?php echo $val['rate'] ?>" autocomplete="off">
                             <input type="hidden" name="rate_value[]" id="rate_value_<?php echo $x; ?>" class="form-control" value="<?php echo $val['rate'] ?>" autocomplete="off">
                           </td>
-                          <td>
+                          <td style="display: none;">
                             <input type="text" name="amount[]" id="amount_<?php echo $x; ?>" class="form-control" disabled value="<?php echo $val['amount'] ?>" autocomplete="off">
                             <input type="hidden" name="amount_value[]" id="amount_value_<?php echo $x; ?>" class="form-control" value="<?php echo $val['amount'] ?>" autocomplete="off">
                           </td>
-                          <td><button type="button" class="btn btn-danger btn-sm" onclick="removeRow('<?php echo $x; ?>')"><i class="fa fa-close"></i></button></td>
+                          <td style="display: none;"><button type="button" class="btn btn-danger btn-sm" onclick="removeRow('<?php echo $x; ?>')"><i class="fa fa-close"></i></button></td>
                        </tr>
                        <?php $x++; ?>
                      <?php endforeach; ?>
